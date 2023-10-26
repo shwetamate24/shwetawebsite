@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Integration</title>
+</head>
+<body>
+    <h1>WhatsApp Integration</h1>
+    
+    <button id="sendWhatsAppButton">Send WhatsApp Message</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const apiKey = 'be072549d4aad96baa07835076776ccd-89b20894-9d86-4241-9dbc-d93acafb2fc2';
+            const apiBaseUrl = 'https://3gg85n.api.infobip.com';
+
+            const sendWhatsAppMessage = async () => {
+                const phoneNumber = '7066399994'; // Replace with the recipient's phone number
+                const message = 'Hello, this is a WhatsApp message!'; // Replace with your message
+
+                try {
+                    // Construct the WhatsApp URL with the recipient's phone number and a message (optional)
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    
+                    // Open the WhatsApp chat in a new tab or window
+                    window.open(whatsappUrl, '_blank');
+
+                    // Optionally, you can also send the message using Infobip API here if needed
+
+                    alert('WhatsApp chat opened successfully!');
+                } catch (error) {
+                    console.error('Error opening WhatsApp chat:', error);
+                    alert('Failed to open WhatsApp chat.');
+                }
+            };
+
+            const sendWhatsAppButton = document.getElementById('sendWhatsAppButton');
+            sendWhatsAppButton.addEventListener('click', sendWhatsAppMessage);
+        });
+    </script>
+</body>
+</html>

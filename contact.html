@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Welcome to Agro Agency</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+	<script src="whatsapp_integration.html"></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" width="100" height="80" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+					<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="Product.html">Product</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="http://localhost/mywordpresssite/">Blog</a></li>
+						<li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="../login.html">Admin Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Contact Us</h1>
+				</div>
+				
+
+			</div>
+			
+		</div>
+	
+	</div>
+	<!-- End All Pages -->
+	<div  class="center-container">
+		<!-- Add this style to your button -->
+<button id="sendWhatsAppButton" style="background-color: #3F4925; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; margin: 0;">Send WhatsApp Message</button>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const apiKey = 'be072549d4aad96baa07835076776ccd-89b20894-9d86-4241-9dbc-d93acafb2fc2';
+				const apiBaseUrl = 'https://3gg85n.api.infobip.com';
+	
+				const sendWhatsAppMessage = async () => {
+					const phoneNumber = '7066399994'; // Replace with the recipient's phone number
+					const message = 'Hello, this is a WhatsApp message!'; // Replace with your message
+	
+					try {
+						// Construct the WhatsApp URL with the recipient's phone number and a message (optional)
+						const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+						
+						// Open the WhatsApp chat in a new tab or window
+						window.open(whatsappUrl, '_blank');
+	
+						// Optionally, you can also send the message using Infobip API here if needed
+	
+						alert('WhatsApp chat opened successfully!');
+					} catch (error) {
+						console.error('Error opening WhatsApp chat:', error);
+						alert('Failed to open WhatsApp chat.');
+					}
+				};
+	
+				const sendWhatsAppButton = document.getElementById('sendWhatsAppButton');
+				sendWhatsAppButton.addEventListener('click', sendWhatsAppMessage);
+			});
+		</script>
+	</div>
+	<div class="center-container"  id="mc_embed_shell">
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		  #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+		  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+			 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+	  <form action="https://gmail.us21.list-manage.com/subscribe/post?u=143a4c2fc3e283e8acaef5e75&amp;id=ca398aaf03&amp;f_id=0075eae6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+		  <div id="mc_embed_signup_scroll"><h2>Feedback Form</h2>
+			  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+			  <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div><div class="mc-field-group"><label for="mce-MMERGE6">Message </label><input type="text" name="MMERGE6" class=" text" id="mce-MMERGE6" value=""></div>
+		  <div id="mce-responses" class="clear foot">
+			  <div class="response" id="mce-error-response" style="display: none;"></div>
+			  <div class="response" id="mce-success-response" style="display: none;"></div>
+		  </div>
+	  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+		  /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+		  <input type="text" name="b_143a4c2fc3e283e8acaef5e75_ca398aaf03" tabindex="-1" value="">
+	  </div>
+		  <div class="optionalParent">
+			  <div class="clear foot">
+				  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+				  <p style="margin: 0px auto;"><a href="http://eepurl.com/iBi7kQ" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+			  </div>
+		  </div>
+	  </div>
+  </form>
+  </div>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+  
+	
+	<!-- Start Contact info -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Phone</h4>
+						<p class="lead">
+							9022159433
+						</p>
+						<p class="lead">
+							8828020332
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							apurvajarwal@gmail.com
+						</p>
+						<p class="lead">
+							shruti.rc16@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Location</h4>
+						<p class="lead">
+							Garkheda,Ulkanagri
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Opening hours</h3>
+					<p><span class="text-color">Mon-Fri :</span> 10:00Am - 10:00Pm</p>
+					<p><span class="text-color">Sat-Sun :</span> 10:00Am - 11:00Pm</p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact information</h3>
+					<p class="lead">Garkheda Ulkanagri</p>
+					<p class="lead"><a href="#">9896758901</a></p>
+					<p><a href="#">shwetamatebtech@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribe</h3>
+					<div class="subscribe_form">
+					<form class="subscribe_form" method="post">
+							<input name="email" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button name="subscribe" type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+							
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2022 <a href="#">Agro Agency</a> Design By : 
+					<a href="https://html.design/">AS</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	
+</body>
+
+  
+</html>
+

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Welcome to Agro Agency</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+        .receipt {
+            text-align: center;
+            margin-top: 50px;
+        }
+    .buy-now-btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" width="100" height="80" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-rs-food">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Product.html">Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../login.html">Admin Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    
+    <!-- Start All Pages -->
+    <div class="all-page-title page-breadcrumb">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Special Products</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Pages -->
+    
+    <!-- Start Product -->
+    <div class="Product-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading-title text-center">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="sortDropdown">
+                  <a class="dropdown-item" href="#" onclick="sortProducts('lowToHigh')">Low to High</a>
+                  <a class="dropdown-item" href="#" onclick="sortProducts('highToLow')">High to Low</a>
+                </div>
+              </div>
+              
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/Olive.jpg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Olive</h1>
+                        <p>Price: ₹100</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px; width: 240px;" onclick="addToCart('Olive', 'Price: ₹100', '1')">Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/amla.jpg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Amla</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px; width: 240px;" onclick="addToCart('Amla', 'Price: ₹100', '1')">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/black pepper.jpg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Black pepper</h1>
+                        <p>Price: ₹155</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;"onclick="addToCart('Black pepper', 'Price: ₹155', '1')">Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/Sugar cube.jpg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Sugar cube</h1>
+                        <p>Price: ₹90</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;"onclick="addToCart('Sugar cube', 'Price: ₹90', '1')">Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/honey.jpg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Honey</h1>
+                        <p>Price: ₹60</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;"onclick="addToCart('Honey', 'Price: ₹60', '1')">Add to Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/sunflower seeds.jpg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Sunflower Seeds</h1>
+                        <p>Price: ₹25</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;"onclick="addToCart('Sunflower seeds', 'Price: ₹25', '1')">Add to Cart</button>
+            
+
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/cinnamon.jpeg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Cinnamon Powder</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Cinnamon Powder', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/Elaichi.jpeg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Elaichi</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Elaichi', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="data:image/jpeg;base64,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" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Rasins</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Rasins', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/walnuts.jpeg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Walnuts</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Walnuts', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/Turmeric.jpeg" alt="Product Image">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Turmeric</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Turmeric', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/Black Tea.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Black Tea</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Black Tea', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/pistachio.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Pistachio</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Pistachio', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/cumin.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Cumin</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Cumin', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/cloves.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Clove</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Clove', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://5.imimg.com/data5/LO/KL/MY-5665983/carom-seeds-500x500.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Carom</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Carom', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://thumbs.dreamstime.com/b/macro-close-up-organic-indian-bay-leaf-cinnamomum-tamala-tezpatta-white-background-pile-aromatic-spice-top-view-214490397.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Indian Bay Leaves</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Indian Bay Leaves', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://png.pngtree.com/background/20230928/original/pngtree-collection-of-charoli-health-cheronjee-food-photo-picture-image_5259884.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Charoli</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Charoli', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/capsicum.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Capsicum</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Capsicum', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/premium-photo/fenugreek-spice-fenugreek-isolated-white-background-fenugreek-seeds-macro_444343-452.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Fenugreek</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Fenugreek', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/premium-photo/ginger-with-dried-powder-white-background_525574-9229.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Ginger Powder</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Ginger Powder', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/premium-photo/black-mustard-seeds-plate-isolated-white-background_219717-323.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Black Mustard Seeds</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Black Mustard Seeds', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://previews.123rf.com/images/amylv/amylv1806/amylv180600081/103586743-saffron-thread-isolated-on-white-background-top-view.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Saffron</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Saffron', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2900509.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Peanuts</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Peanuts', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="data:image/jpeg;base64,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" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Tamrind</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Tamrind', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://previews.123rf.com/images/miragik/miragik1502/miragik150200194/36868578-black-stone-flower-or-kalpasi-parmotrema-perlatum-it-is-used-as-spice-in-india-isolated-on-white.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Black Stone Flower</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Black Stone Flower', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317555780/ZR/WU/LL/96558411/white-poha.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Poha</h1>
+                        <p>Price: ₹80</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Poha', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/background/20220429/pngtree-white-poppy-seeds-seeds-unsaturated-food-photo-image_17523664.jpg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Khas-Khas</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Khas-Khas', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/alomnds.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Almonds</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Cinnamon Powder', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="data:image/jpeg;base64,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" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Red Chili Powder</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Red Chili Powder', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6KelMqtdnOYd9tb4mNFOoCL8eBjXLaBcaA&usqp=CAU" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Blue Tea Powder</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Blue Tea Powder', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="product-image">
+                        <img src="/Users/sachin/Downloads/Web 2 - Copy/Web technology project/images/Cashew.jpeg" alt="Product Image" height="250" width="300">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="product-details">
+                        <h1>Cashew</h1>
+                        <p>Price: ₹50</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" style="background-color: #0f4100; border-radius: 12px;" onclick="addToCart('Cashew', 'Price: ₹50', '1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToCart(productName, productPrice, quantity) {
+
+
+
+
+        var item = {
+            name: productName,
+            price: parseFloat(productPrice.split("₹")[1]),
+            quantity: parseInt(quantity)
+            
+        };
+        localStorage.setItem("selectedItem", JSON.stringify(item));
+        
+        var table = document.querySelector("table");
+        var row = table.insertRow(-1);
+        var productNameCell = row.insertCell(0);
+        var priceCell = row.insertCell(1);
+        var quantityCell = row.insertCell(2);
+        var totalCell = row.insertCell(3);
+
+        productNameCell.innerHTML = item.name;
+        priceCell.innerHTML = "Price: ₹" + item.price.toFixed(2);
+        quantityCell.innerHTML = item.quantity;
+        totalCell.innerHTML = "₹" + (item.price * item.quantity).toFixed(2);
+
+        var total = item.price * item.quantity;
+        document.getElementById("total").innerHTML = "Total: ₹" + total.toFixed(2);
+        var buyNowButton = document.querySelector('.buy-now-btn');
+        buyNowButton.style.display = 'block';
+
+        
+            }
+</script>
+            
+<div class="receipt">
+    <h2>Receipt</h2>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin: auto;">
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <!-- Add rows for each product dynamically -->
+    </table>
+    
+    <p id="total">Total: ₹0.00</p>
+    
+    <button class="btn btn-success buy-now-btn" style="background-color: #0f4100; border-radius: 12px; display: none; text-align: center;">Buy Now</button>
+</div>
+
+<script>
+    function updateReceipt() {
+        var selectedItems = JSON.parse(localStorage.getItem("selectedItems"));
+        var table = document.querySelector("table");
+        var total = 0;
+
+        // Clear existing rows in the table
+        while (table.rows.length > 1) {
+            table.deleteRow(1);
+        }
+
+        if (selectedItems && selectedItems.length > 0) {
+            selectedItems.forEach(function (item) {
+                var row = table.insertRow(-1);
+                var productNameCell = row.insertCell(0);
+                var priceCell = row.insertCell(1);
+                var quantityCell = row.insertCell(2);
+                var totalCell = row.insertCell(3);
+
+                productNameCell.innerHTML = item.name;
+                priceCell.innerHTML = "Price: ₹" + item.price.toFixed(2);
+                quantityCell.innerHTML = item.quantity;
+                var itemTotal = item.price * item.quantity;
+                totalCell.innerHTML = "₹" + itemTotal.toFixed(2);
+                total += itemTotal;
+            });
+        }
+
+        document.getElementById("total").innerHTML = "Total: ₹" + total.toFixed(2);
+
+        var buyNowButton = document.querySelector('.buy-now-btn');
+        if (total > 0) {
+            buyNowButton.style.display = 'block';
+        } else {
+            buyNowButton.style.display = 'none';
+        }
+    }
+
+    // Call the updateReceipt function to populate the initial receipt
+    updateReceipt();
+</script>
+
+
+    <!-- End Product -->
+    
+    <!-- Start Contact info -->
+    <div class="contact-imfo-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <div class="overflow-hidden">
+                        <h4>Phone</h4>
+                        <p class="lead">
+                            9022159433
+                        </p>
+                        <p class="lead">
+                            8828020332
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-envelope"></i>
+                    <div class="overflow-hidden">
+                        <h4>Email</h4>
+                        <p class="lead">
+                            apurvajarwal@gmail.com
+                        </p>
+                        <p class="lead">
+                            madhuratakey31@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="overflow-hidden">
+                        <h4>Location</h4>
+                        <p class="lead">
+                            Garkheda,Ulkanagri
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact info -->
+    
+    <!-- Start Footer -->
+    <footer class="footer-area bg-f">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3>About Us</h3>
+                    <p></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Opening hours</h3>
+                    <p><span class="text-color">Mon-Fri :</span> 10:00Am - 10:00Pm</p>
+                    <p><span class="text-color">Sat-Sun :</span> 10:00Am - 11:00Pm</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contact information</h3>
+                    <p class="lead">Garkheda Ulkanagri</p>
+                    <p class="lead"><a href="#">9896758901</a></p>
+                    <p><a href="#">anviagro2421@gmail.com</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Subscribe</h3>
+                    <div class="subscribe_form">
+                    <form class="subscribe_form" method="post">
+                            <input name="email" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                            <button name="subscribe" type="submit" class="submit">SUBSCRIBE</button>
+                            <div class="clearfix"></div>
+                            
+                        </form>
+                    </div>
+                    <ul class="list-inline f-social">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="company-name">All Rights Reserved. &copy; 2022 <a href="#">Agro Agency</a> Design By : 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- End Footer -->
+    
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+    
+    
+    
+    
+</body>
+</html>
+
+
